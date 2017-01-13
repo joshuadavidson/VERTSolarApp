@@ -1,0 +1,22 @@
+* {
+  font-family: Sans-Serif;
+}
+
+table {
+  margin: 0px auto;
+}
+
+td, th {
+  text-align: center;
+}
+
+/* class for wide elements that need horizontal scrolling */
+.scrollable {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.green {
+  color: #72c02c;
+}
