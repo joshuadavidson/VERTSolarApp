@@ -17,13 +17,11 @@
   <!-- Utilities -->
   <link rel="shortcut icon" href="./icon/font/solar-panel.svg">
 
-  <!-- Web Fonts -->
-  <link rel="stylesheet" type="text/css" href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&amp;subset=cyrillic,latin'>
-
   <!-- Stylesheets -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./site.css" />
   <link rel="stylesheet" href="./navbar.css" />
+  <link rel="stylesheet" href="./whatIf.css" />
 
   <!-- Icons -->
   <link rel="stylesheet" href="./icons/solar-panel.css" />
@@ -33,6 +31,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
   <script src="./lib/ui-bootstrap-2.4.0.min.js"></script>
   <script src="./app.js"></script>
+  <script src="./services/WhatIfData.service.js"></script>
   <script src="./components/whatIf.component.js"></script>
   <script src="./components/navbar.component.js"></script>
 
@@ -40,11 +39,22 @@
 
 <body>
   <navbar></navbar>
-  <div class="container-fluid">
-    <div class="row">
-      <what-if></what-if>
-    </div>
-  </div>
+
+  <h4 class="green-color">Assignment 1: Graceful Degredation</h4>
+
+  <h4 class="green-color">Assignment 2: What-if Table Layout</h4>
+  <p>The following What-If Analysis table has been converted into a reusable AngularJS component. It has been placed into a horizontally scrollable container to allow the entire table to be viewed on devices with small screens.</p>
+  <what-if></what-if>
+
+  <h4 class="green-color">Assignment 3: New FontAwesome Icon</h4>
+  <p>A single icon was created to represent a solar panel: <i class="solar fa-lg solar-panel"></i>. This icon is the only icon in a custom 'Solar' font. This font can be easily expanded for future icons and is fully compatible with all FontAwesome css classes.</p>
+
+  <h4 class="green-color">Assignment 4: Custom AngularJS Service</h4>
+  <p>The What-If Anaylsis table above utilizes a custom AngularJS service to save not only the center square of data but any square that the user selects. The What-If component also highlights the data in the table that has been saved.</p>
+
+  <h4 class="green-color">Assignment 5: New First View for VERTSolar.com</h4>
+  <p>A new first view for the VERTSolar.com site can be seen below:</p>
+
 </body>
 
 </html>
