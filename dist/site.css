@@ -12,10 +12,10 @@
   color: white;
 }
 
-a.home-link:link,
-a.home-link:visited,
-a.home-link:hover,
-a.home-link:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
   color:inherit;
   text-decoration: none;
 }
@@ -40,9 +40,4 @@ footer {
   height: 60px;
   border-radius: 50%;
   color: white;
-}
-
-.tile a {
-  color: inherit;
-  text-decoration: none;
 }
