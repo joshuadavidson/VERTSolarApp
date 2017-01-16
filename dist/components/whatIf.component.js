@@ -18,6 +18,7 @@
         WhatIfDataSvc.getData().then((data) => {
           model.data = data;
         });
+        model.irr = WhatIfDataSvc.savedData.irr;
       };
 
       // function that takes data from table and saves it to the WhatIfDataSvc
