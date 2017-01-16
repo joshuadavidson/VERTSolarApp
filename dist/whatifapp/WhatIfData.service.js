@@ -6,19 +6,18 @@
 (function () {
   angular.module('vertApp')
 
-  .factory('WhatIfDataSvc', ['$http', function whatIfDataService($http) {
+  .factory('WhatIfDataSvc', ['$http', function WhatIfDataService($http) {
     const savedData = {
       irr: null,
     };
 
     const getData = function () {
-      return $http.get('./mock/whatIfData.json')
+      return $http.get('https://jwaynedavidson.com/projects/VERTSolar/whatifapp/whatIfData.json')
         .then(response => response.data);
     };
 
     const saveIRR = function (data) {
       savedData.irr = data;
-      //return Promise.resolve(data);
     };
 
     return {

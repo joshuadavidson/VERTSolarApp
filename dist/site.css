@@ -1,0 +1,48 @@
+/* Site-wide styles */
+* {
+  font-family: Sans-Serif;
+}
+
+.green-color {
+  color: #72c02c;
+}
+
+.green-bg {
+  background-color: #72c02c !important;
+  color: white;
+}
+
+a.home-link:link,
+a.home-link:visited,
+a.home-link:hover,
+a.home-link:active {
+  color:inherit;
+  text-decoration: none;
+}
+
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+/* Styles used on index.html home page */
+.tile {
+  border: solid 1px #dddddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.tile i {
+  background-color: #72c02c;
+  padding-top: 15px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+}
+
+.tile a {
+  color: inherit;
+  text-decoration: none;
+}

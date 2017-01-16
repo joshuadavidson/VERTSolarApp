@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang="en-us" ng-app="vertApp">
+
+<head>
+  <title>VERT Solar Programming Assignments - Layout</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Open Graph properties -->
+  <meta property="og:title" content="VERT Solar App" />
+  <meta property="og:url" content="https://jwaynedavidson/com/projects/VERTSolar/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="VERT Solar Front End Web Developer Assignment" />
+  <meta property="og:image" content="https://vertsolar.com/Content/images/vert_splash_bkg.jpg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../site.css" />
+  <link rel="stylesheet" href="./layout.css" />
+  <link rel="stylesheet" href="../whatifapp/whatIf.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="../icon/solar-font/solar-panel.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Angular JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="../whatifapp/app.js"></script>
+  <script src="../whatifapp/WhatIfData.service.js"></script>
+  <script src="../whatifapp/whatIf.component.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <a href="../index.html" class="home-link">
+      <h2 class="text-center"><span class="green-color">VERT</span> Solar Finance</h2>
+    </a>
+    <h3 class="text-center">Programming Assignments</h3>
+
+    <h4 class="green-color text-center">Graceful Degredation</h4>
+  </header>
+
+  <section class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        <h3>Patrioque eam eu</h3>
+        <p>Eos rebum impetus inermis cu, dico ipsum ea vis, hinc consetetur vituperata id sea. Placerat petentium ex eam? Sea discere postulant at, an vix possim meliore reprimique, quo error omittam an. Vel cibo soluta primis an, ex duis efficiendi mea,
+          modo oporteat no est? Ei nobis meliore intellegam eum, scripta mandamus has an? Alienum percipit vel et, mentitum sapientem patrioque eam eu. Ne recteque molestiae nec, ea has homero graeco contentiones.</p>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-4">
+        <img class="img-responsive" src="https://vertsolar.com/Content/images/vert_splash_bkg.jpg" alt="Solar Panels">
+      </div>
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-md-12 col-lg-4">
+        <h3>Cras dapibus</h3>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetuer.</li>
+          <li>Aenean commodo ligula eget dolor.</li>
+          <li>Aenean massa cum sociis natoque penatibus.</li>
+        </ul>
+        <p>At usu nostro animal officiis, mei at audire laboramus! Sed ne doming atomorum, qui dicta possit corrumpit ea. Eam ne aeterno iracundia definiebas, congue maiorum eum ea, no oporteat inciderint nec! Commune appellantur ullamcorper an mel, id vel
+          albucius detraxit accusata? Per an verear vocibus postulant, propriae persequeris usu in. Vel eu maiorum tacimates, erat iudico fierent sit ex.</p>
+      </div>
+    </div>
+
+    <div class="row dark-row">
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <i class="fa fa-3x fa-pencil"></i>
+        <p>Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi.</p>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <i class="fa fa-3x fa-cutlery"></i>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <i class="fa fa-3x fa-dashboard"></i>
+        <p>Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <i class="fa fa-3x fa-exchange"></i>
+        <p>Per an verear vocibus postulant, propriae persequeris usu in.</p>
+      </div>
+      <div class="clearfix visible-sm-block"></div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <i class="fa fa-3x fa-eye"></i>
+        <p>Commune appellantur ullamcorper an mel, id vel albucius detraxit accusata?</p>
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2 text-center">
+        <i class="fa fa-3x fa-cube"></i>
+        <p>Ne recteque molestiae nec, ea has homero graeco contentiones.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <what-if id="what-if-table"></what-if>
+      </div>
+      <div class="col-md-6">
+        <h3>Ullamcorper an Mel</h3>
+        <p>At usu nostro animal officiis, mei at audire laboramus! Sed ne doming atomorum, qui dicta possit corrumpit ea. Eam ne aeterno iracundia definiebas, congue maiorum eum ea, no oporteat inciderint nec! Commune appellantur ullamcorper an mel, id vel
+          albucius detraxit accusata? Per an verear vocibus postulant, propriae persequeris usu in. Vel eu maiorum tacimates, erat iudico fierent sit ex.</p>
+      </div>
+    </div>
+
+    <div class="row green-bg">
+      <div class="col-md-6 col-md-offset-3 col-lg-8 col-lg-offset-2">
+        <h1 class="text-center">In enim justo</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <strong>strong</strong>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <h2 class="text-center">Lorem ipsum dolor sit amet consectetuer adipiscing elit</h2>
+      <div class="col-md-6">
+        <h3>Aenean commodo ligula eget dolor aenean massa</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+        <ul>
+          <li>Lorem ipsum dolor sit amet consectetuer.</li>
+          <li>Aenean commodo ligula eget dolor.</li>
+          <li>Aenean massa cum sociis natoque penatibus.</li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <h3>Aenean commodo ligula eget dolor aenean massa</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+          quis, sem.</p>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium
+          quis, sem.</p>
+      </div>
+    </div>
+
+    <div class="row dark-row">
+      <div class="col-xs-6 col-xs-offset-3 col-sm-3 col-sm-offset-2">
+        <img class="img-responsive" src="https://vertsolar.com/Content/images/vert_splash_bkg.jpg" alt="Solar Panels">
+      </div>
+      <div class="clearfix visible-xs-block">
+
+      </div>
+      <div class="col-sm-6">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="name" class="col-sm-2">Name:</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="text" id="name" placeholder="Enter your full name" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email" class="col-sm-2">Email:</label>
+            <div class="col-sm-10">
+              <input class="form-control" type="email" id="email" placeholder="Enter your email address" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="col-sm-2">Message:</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" id="message" placeholder="What's on your mind?"></textarea>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-default">Submit</button>
+
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <a href="https://jwaynedavidson.com"><img class="responsive" height="25" src="https://jwaynedavidson.com/img/jdblack.svg" alt="JD Logo" /></a><br> Coded by <a href="https://jwaynedavidson.com">Joshua Davidson</a><br>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

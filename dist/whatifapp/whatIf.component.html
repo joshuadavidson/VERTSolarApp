@@ -1,0 +1,54 @@
+<!doctype html>
+
+<div class="scrollable">
+  <table class="table-condensed" id="what-if-table">
+    <caption>What-If Analysis</caption>
+
+    <thead>
+      <tr>
+        <th rowspan="3" colspan="3"><span ng-show="model.irr">IRR of {{model.irr}}% saved</td>
+        <th colspan="5" scope="colgroup">1st Year kWh Production (Efficiency Factor)</th>
+      </tr>
+      <tr>
+        <th ng-repeat="efficiency in model.data.headers.efficiency track by $index" scope="col">{{efficiency}}%</th>
+      </tr>
+      <tr>
+        <th ng-repeat="production in model.data.headers.production track by $index" scope="col" class="shaded-header">{{production | number}}</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th rowspan="5" scope="rowgroup">Total Cost DC<br>($/watt)</th>
+        <th scope="row">{{model.data.headers.unitCost[0] | currency}}</th>
+        <th scope="row" class="shaded-header">{{model.data.headers.totalCost[0] | currency:"$":0}}</th>
+        <td ng-repeat="irr in model.data.irrData[0] track by $index" ng-click="model.saveData(irr)" ng-class="{'green-bg': model.irr === irr}">{{irr}}%</td>
+      </tr>
+
+      <tr>
+        <th scope="row">{{model.data.headers.unitCost[1] | currency}}</th>
+        <th scope="row" class="shaded-header">{{model.data.headers.totalCost[1] | currency:"$":0}}</th>
+        <td ng-repeat="irr in model.data.irrData[1] track by $index" ng-click="model.saveData(irr)" ng-class="{'green-bg': model.irr === irr}">{{irr}}%</td>
+      </tr>
+
+      <tr>
+        <th scope="row">{{model.data.headers.unitCost[2] | currency}}</th>
+        <th scope="row" class="shaded-header">{{model.data.headers.totalCost[2] | currency:"$":0}}</th>
+        <td ng-repeat="irr in model.data.irrData[2] track by $index" ng-click="model.saveData(irr)" ng-class="{'green-bg': model.irr === irr}">{{irr}}%</td>
+      </tr>
+
+      <tr>
+        <th scope="row">{{model.data.headers.unitCost[3] | currency}}</th>
+        <th scope="row" class="shaded-header">{{model.data.headers.totalCost[3] | currency:"$":0}}</th>
+        <td ng-repeat="irr in model.data.irrData[3] track by $index" ng-click="model.saveData(irr)" ng-class="{'green-bg': model.irr === irr}">{{irr}}%</td>
+      </tr>
+
+      <tr>
+        <th scope="row">{{model.data.headers.unitCost[4] | currency}}</th>
+        <th scope="row" class="shaded-header">{{model.data.headers.totalCost[4] | currency:"$":0}}</th>
+        <td ng-repeat="irr in model.data.irrData[4] track by $index" ng-click="model.saveData(irr)" ng-class="{'green-bg': model.irr === irr}">{{irr}}%</td>
+      </tr>
+    </tbody>
+
+  </table>
+</div>

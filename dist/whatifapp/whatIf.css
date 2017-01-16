@@ -1,0 +1,56 @@
+#what-if-table {
+  margin: 0px auto;
+}
+
+#what-if-table td, th {
+  text-align: center;
+}
+
+#what-if-table td:hover {
+  cursor: pointer;
+  background-color: #eeeeee;
+}
+
+/* Add border to the cells making up the top of box */
+#what-if-table tbody tr:nth-of-type(2) td:nth-of-type(2),
+#what-if-table tbody tr:nth-of-type(2) td:nth-of-type(3),
+#what-if-table tbody tr:nth-of-type(2) td:nth-of-type(4) {
+  border-top: thin solid #555555;
+}
+
+/* Add border to the cells making up the left of box */
+#what-if-table tbody tr:nth-of-type(2) td:nth-of-type(2),
+#what-if-table tbody tr:nth-of-type(3) td:nth-of-type(2),
+#what-if-table tbody tr:nth-of-type(4) td:nth-of-type(2) {
+  border-left: thin solid #555555;
+}
+
+/* Add border to the cells making up the bottom of box */
+#what-if-table tbody tr:nth-of-type(4) td:nth-of-type(2),
+#what-if-table tbody tr:nth-of-type(4) td:nth-of-type(3),
+#what-if-table tbody tr:nth-of-type(4) td:nth-of-type(4) {
+  border-bottom: thin solid #555555;
+}
+
+/* Add border to the cells making up the right of box */
+#what-if-table tbody tr:nth-of-type(2) td:nth-of-type(4),
+#what-if-table tbody tr:nth-of-type(3) td:nth-of-type(4),
+#what-if-table tbody tr:nth-of-type(4) td:nth-of-type(4) {
+  border-right: thin solid #555555;
+}
+
+/* Add border to the center cell */
+#what-if-table tbody tr:nth-of-type(3) td:nth-of-type(3) {
+  border: thin solid #555555;
+}
+
+.shaded-header {
+  background-color: #eeeeee;
+}
+
+/* class for wide elements that need horizontal scrolling */
+.scrollable {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}

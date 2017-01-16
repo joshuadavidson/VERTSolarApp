@@ -1,0 +1,12 @@
+section div {
+  padding 20px;
+}
+
+.row {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.dark-row {
+  background-color: #eeeeee;
+}

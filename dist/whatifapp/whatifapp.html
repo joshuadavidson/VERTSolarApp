@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en-us" ng-app="vertApp">
+
+<head>
+  <title>VERT Solar Programming Assignments - What-If App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Open Graph properties -->
+  <meta property="og:title" content="VERT Solar App" />
+  <meta property="og:url" content="https://jwaynedavidson/com/projects/VERTSolar/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description" content="VERT Solar Front End Web Developer Assignment" />
+  <meta property="og:image" content="https://vertsolar.com/Content/images/vert_splash_bkg.jpg" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../site.css" />
+  <link rel="stylesheet" href="./whatIf.css" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="../icon/solar-font/solar-panel.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Angular JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+  <script src="./app.js"></script>
+  <script src="./WhatIfData.service.js"></script>
+  <script src="./whatIf.component.js"></script>
+
+</head>
+
+<body>
+
+  <header>
+    <a href="../index.html" class="home-link">
+      <h2 class="text-center"><span class="green-color">VERT</span> Solar Finance</h2>
+    </a>
+    <h3 class="text-center">Programming Assignments</h3>
+  </header>
+
+  <section class="container-fluid">
+    <div class="row">
+
+      <div class="col-sm-6 col-sm-offset-3">
+        <h4 class="green-color text-center">AngularJS What-If Component & Service</h4>
+        <p>The What-If Anaylsis table utilizes a custom AngularJS service to save not only the center square of data but any square that the user selects. The What-If component also highlights the data in the table that has been saved.</p>
+
+        <h4 class="green-color text-center">What-if Table Layout</h4>
+        <p>The What-If Analysis table has been converted into a reusable AngularJS component. It has been placed into a horizontally scrollable container to allow the entire table to be viewed on devices with small screens. An example of it within a layout
+          can be seen in the <a href="../layout/layout.html">Graceful Degredation</a> Assignment</p>
+      </div>
+
+    </div>
+  </section>
+
+  <section>
+    <what-if></what-if>
+  </section>
+
+  <footer class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <a href="https://jwaynedavidson.com"><img class="responsive" height="25" src="https://jwaynedavidson.com/img/jdblack.svg" alt="JD Logo" /></a><br>
+        Coded by <a href="https://jwaynedavidson.com">Joshua Davidson</a><br>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
