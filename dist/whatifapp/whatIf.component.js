@@ -18,6 +18,7 @@
         WhatIfDataSvc.getData().then(function (data) {
           model.data = data;
         });
+        // also fetch any saved IRR data
         model.irr = WhatIfDataSvc.savedData.irr;
       };
 
