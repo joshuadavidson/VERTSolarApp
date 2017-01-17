@@ -9,13 +9,13 @@
     templateUrl: 'https://jwaynedavidson.com/projects/VERTSolar/whatifapp/whatIf.component.html',
     controllerAs: 'model',
     controller: ['WhatIfDataSvc', function whatIfCtrl(WhatIfDataSvc) {
-      const model = this;
+      var model = this;
 
       model.irr = null;
 
       // when the component is initialized fetch the what-if data
       model.$onInit = function () {
-        WhatIfDataSvc.getData().then((data) => {
+        WhatIfDataSvc.getData().then(function (data) {
           model.data = data;
         });
         model.irr = WhatIfDataSvc.savedData.irr;

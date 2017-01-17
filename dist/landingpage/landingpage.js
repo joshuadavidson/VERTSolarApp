@@ -4,10 +4,10 @@
 // use IIFE to avoid pollution of global scope
 
   $(document).ready(function () {
-    const cards = $('.card').hide();
-    let i = 0;
+    var cards = $('.card').hide();
+    var i = 0;
 
-    const cycleCards = function () {
+    var cycleCards = function () {
       cards.eq(i)
         .fadeIn(1000)
         .delay(4000)
