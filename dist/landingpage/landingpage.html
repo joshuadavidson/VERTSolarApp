@@ -6,7 +6,6 @@
   <title>VERT Solar First View</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <base href="/projects/VERTSolar/landingpage/">
 
   <!-- Open Graph properties -->
   <meta property="og:title" content="VERT Solar First View" />
@@ -19,13 +18,22 @@
   <link rel="stylesheet" href="../site.css" />
   <link rel="stylesheet" href="./landingpage.css" />
 
-  <!-- Bootstrap.JS & Jquery -->
+  <!-- Bootstrap.JS, Jquery, & custom JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./landingpage.js"></script>
 
 </head>
 
 <body>
+
+  <div class="bg-video">
+    <video autoplay muted loop poster="./images/poster.png">
+      <source src="./images/background.mp4" type="video/mp4">
+      <source src="./images/solar-panel.mov" type="video/mov">
+    </video>
+  </div>
+
   <header>
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container-fluid">
@@ -43,52 +51,59 @@
         <!-- Collect the nav links for collapse -->
         <div class="collapse navbar-collapse" id="collapse-content">
           <ul class="nav navbar-nav navbar-left">
-
-            <li>
-              <a href="">Home</a>
-            </li>
-            <li>
-              <a href="">About Us</a>
-            </li>
-            <li>
-              <a href="">Services</a>
-            </li>
-            <li>
-              <a href="">Financing</a>
-            </li>
-            <li>
-              <a href="">Record</a>
-            </li>
-            <li>
-              <a href="">Careers</a>
-            </li>
-            <li>
-              <a href="">Contact</a>
-            </li>
-
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Financing</a></li>
+            <li><a href="">Record</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="">Contact</a></li>
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="">Register</a>
-            </li>
-            <li>
-              <a href="">Login</a>
-            </li>
+            <li><a href="">Register</a></li>
+            <li><a href="">Login</a></li>
           </ul>
         </div>
-        <!-- /.navbar-collapse -->
+
       </div>
-      <!-- /.container-fluid -->
     </nav>
   </header>
 
-  <div class="bgvideo">
-    <video autoplay muted loop poster="./images/solar-panel.jpg">
-    <source src="./images/solar-panel.mp4" type="video/mp4">
-    <source src="./images/solar-panel.mp4" type="video/mp4">
-  </video>
-  </div>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 text-center">
+
+        <div class="card" id="card1">
+          <hr>
+          <h1>REINVENTING ENERGY</h1>
+          <hr>
+          <h4>VERT Solar Finance Invests in Leaders</h4>
+          <button class="btn btn-default" type="button" name="button">Learn More</button>
+          <button class="btn btn-default" type="button" name="button">Our Services</button>
+        </div>
+
+        <div class="card" id="card2">
+          <hr>
+          <h1>WE'RE HIRING</h1>
+          <hr>
+          <h4>Pioneer the next distruption in energy!</h4>
+          <h4>Be a part of a new business model and software platform that will revolutionize the industry!</h4>
+          <button class="btn btn-default" type="button" name="button">Start Your Career</button>
+        </div>
+
+        <div class="card" id="card3">
+          <hr>
+          <h1>RENEWABLE SOLAR ENERGY INVESTMENT</h1>
+          <hr>
+          <h4>Providing EPC's, Developers and Commerical/Industrial solar clients one-stop financing</h4>
+          <button class="btn btn-default" type="button" name="button">Learn More</button>
+          <button class="btn btn-default" type="button" name="button">Our Services</button>
+        </div>
+
+      </div>
+    </div>
+  </main>
 
 </body>
 
